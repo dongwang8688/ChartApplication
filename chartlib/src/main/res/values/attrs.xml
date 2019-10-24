@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BaseScrollerView的自定义属性 -->
+    <declare-styleable name="BaseScrollerView">
+        <!-- x轴显示的刻度的个数 -->
+        <attr name="xLineMarkCount" format="integer" />
+        <!-- y轴显示的刻度的个数 -->
+        <attr name="yLineMarkCount" format="integer" />
+        <!-- X轴和Y轴的宽度 -->
+        <attr name="lineWidth" format="dimension" />
+        <!-- 数据圆点的位置 -->
+        <attr name="dataDotGravity" format="enum" >
+            <enum name="line" value="0" />
+            <enum name="center" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- CanvasChartView的自定义属性 -->
+    <declare-styleable name="BarChartView">
+        <!-- 柱状图宽度 -->
+        <attr name="barBorder" format="dimension" />
+        <!-- 柱状图颜色 -->
+        <attr name="barColor" format="color" />
+        <!-- 是否只显示第一象限 -->
+        <attr name="onlyFirstArea" format="boolean" />
+        <!-- x、y轴的颜色 -->
+        <attr name="lineColor" format="color" />
+        <!-- 图表的连线颜色 -->
+        <attr name="chartLineColor" format="color" />
+        <!-- 图表的连线宽度-->
+        <attr name="chartLineWidth" format="dimension" />
+        <!-- 图表的连线样式：直线或曲线 -->
+        <attr name="chartLineStyle" format="enum">
+            <enum name="linear" value="0" />
+            <enum name="curve" value="1" />
+        </attr>
+        <!-- 圆点的宽度 -->
+        <attr name="dotWidth" format="dimension" />
+        <!-- 圆点的颜色 -->
+        <attr name="dotColor" format="color" />
+        <!-- 是否显示圆点 -->
+        <attr name="showDataDot" format="boolean" />
+        <!-- 虚线的颜色 -->
+        <attr name="dashLineColor" format="color" />
+        <!-- 虚线的宽度 -->
+        <attr name="dashLineWidth" format="dimension" />
+        <!-- y轴的最大刻度 -->
+        <attr name="yLineMax" format="integer" />
+        <!-- 绘制文字的大小 -->
+        <attr name="numTextSize" format="integer" />
+        <!-- 绘制文字的颜色 -->
+        <attr name="textColor" format="color" />
+        <!-- 文字和圆点之间的间距 -->
+        <attr name="textSpace" format="dimension" />
+        <!-- 是否显示刻度文字 -->
+        <attr name="showMarkText" format="boolean"/>
+        <!-- 刻度文字大小 -->
+        <attr name="markTextSize" format="integer"/>
+        <!-- 刻度文字颜色 -->
+        <attr name="markTextColor" format="color"/>
+    </declare-styleable>
+
+    <!-- CanvasChartView的自定义属性 -->
+    <declare-styleable name="CommonBarChart">
+        <!-- 柱状图间隔 -->
+        <attr name="itemSpace" format="dimension" />
+        <!-- 柱状图宽度 -->
+        <attr name="itemWidth" format="dimension" />
+        <!-- 柱状图颜色 -->
+        <attr name="itemColor" format="color" />
+        <!-- x、y轴的颜色 -->
+        <attr name="xyLineColor" format="color" />
+        <!-- 图表的轴线宽度-->
+        <attr name="xyLineWidth" format="dimension" />
+        <!-- 图表的轴距文字宽度-->
+        <attr name="lineTextSpace" format="dimension" />
+        <!-- y轴的最大刻度 -->
+        <attr name="yMarkMax" format="integer" />
+        <!-- y轴均分数量 -->
+<!--        <attr name="yNum" format="integer" />-->
+        <!-- 绘制文字的大小 -->
+        <attr name="comTextSize" format="dimension" />
+        <!-- 绘制文字的颜色 -->
+        <attr name="comTextColor" format="color" />
+        <!-- 刻度文字大小 -->
+        <attr name="cbcMarkSize" format="dimension"/>
+        <!-- 刻度文字颜色 -->
+        <attr name="markColor" format="color"/>
+        <!-- 是否显示刻度文字 -->
+        <attr name="showMark" format="boolean"/>
+        <!-- 是否显示value文字 -->
+        <attr name="showValue" format="boolean"/>
+        <!-- 是否多颜色 value文字和bar -->
+        <attr name="showColors" format="boolean"/>
+        <!-- 是否显示横向线 -->
+        <attr name="showXLines" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="PieChartView">
+        <attr name="circleRadius" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="lineSize" format="dimension" />
+        <attr name="exampleDrawable" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="StarrySkyView">
+        <attr name="pointRadius" format="dimension" />
+        <attr name="prnSize" format="dimension" />
+        <attr name="markSize" format="dimension" />
+        <attr name="markLineSize" format="dimension" />
+        <!-- 是否等分圆 -->
+        <attr name="isHalveCircle" format="boolean"/>
+    </declare-styleable>
+</resources>

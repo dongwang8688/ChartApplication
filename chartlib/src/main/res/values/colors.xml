@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="transparent"> </color>
+    <color name="acc_count_oval_green">#7ed321 </color>
+    <color name="acc_count_oval_red">#d0021b </color>
+    <color name="brown_f5a623">#f5a623 </color>
+    <color name="yellow">#FFFF00 </color>
+    <color name="green">#00FF00 </color>
+    <color name="blue">#0000FF </color>
+    <color name="red">#FF0000 </color>
+    <color name="white">#FFFFFF </color>
+    <!--圈边的颜色-->
+    <color name="acc_count_oval_width">#979797</color>
+    <color name="grey_979797">#979797</color>
+    <!--button background-->
+    <color name="acc_count_trs">#E617333F</color>
+    <color name="acc_count_bg">#17333F</color>
+
+</resources>

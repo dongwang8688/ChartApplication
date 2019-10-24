@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginRight="9dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="5dp">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_10"></LinearLayout>
+
+                    <com.me.chartlib.view.StarrySkyView
+                        android:id="@+id/phone_satsview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_3"
+                        android:layout_weight="5.5"
+                        app:pointRadius="@dimen/dp_4"
+                        app:isHalveCircle="true"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:orientation="vertical"
+                        android:layout_weight="1.3">
+
+                        <TextView
+                            android:id="@+id/tv_service_bds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="BDS"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/sp_9"
+                            android:drawablePadding="@dimen/dp_1"
+                            android:drawableLeft="@drawable/icon_real_time_list_bds"
+                            android:layout_marginTop="3dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_service_gps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="GPS"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/sp_9"
+                            android:drawablePadding="@dimen/dp_1"
+                            android:drawableLeft="@drawable/icon_real_time_list_gps"
+                            android:layout_marginTop="3dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_service_glonass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="GLONASS"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/sp_9"
+                            android:drawablePadding="@dimen/dp_1"
+                            android:drawableLeft="@drawable/icon_real_time_list_glonass"
+                            android:layout_marginTop="3dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_service_galileo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="GALILEO"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/sp_9"
+                            android:drawablePadding="@dimen/dp_1"
+                            android:drawableLeft="@drawable/icon_real_time_list_galileo"
+                            android:layout_marginTop="3dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#3d3d3d"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_cnodata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cno"
+                    android:textSize="11sp"
+                    android:textColor="#c7c7c7"
+                    android:layout_marginTop="13dp"/>
+
+                <com.me.chartlib.view.BarChartView
+                    android:id="@+id/phone_chartview"
+                    android:layout_width="match_parent"
+                    android:layout_height="166dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:padding="@dimen/dp_15"
+                    app:lineWidth="0.5dp"
+                    app:showMarkText="true"
+                    app:numTextSize="@dimen/sp_8"
+                    app:xLineMarkCount="20"
+                    app:lineColor="@color/yellow"
+                    app:onlyFirstArea="true"/>
+
+                <TextView
+                    android:id="@+id/tv_satenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="statesNum"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#c7c7c7"
+                    android:textSize="11sp"
+                    android:layout_gravity="end"/>
+
+                <com.me.chartlib.view.CommonBarChart
+                    android:id="@+id/cbc_test"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    app:comTextColor="@color/yellow"
+                    app:markColor="@color/blue"
+                    app:xyLineColor="@color/yellow"
+                    app:comTextSize="@dimen/sp_8"
+                    app:itemColor="@color/white"
+                    app:showColors="true"
+                    app:showXLines="false"
+                    app:lineTextSpace="@dimen/dp_10"
+                    app:itemSpace="@dimen/dp_10"
+                    app:itemWidth="@dimen/dp_30"
+                    app:cbcMarkSize="@dimen/sp_10"/>
+
+            </LinearLayout>
+
+            <com.me.chartlib.view.PieChartView
+                android:id="@+id/pie_view"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_10"
+                android:paddingBottom="30dp"
+                app:lineSize="@dimen/dp_3"
+                app:circleRadius="@dimen/dp_70"
+                app:textSize="@dimen/sp_8" />
+
+            <com.me.chartlib.view.PointView
+                android:id="@+id/pv_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_200"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
