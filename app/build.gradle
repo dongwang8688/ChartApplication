@@ -27,5 +27,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.0-beta1'
     testImplementation 'junit:junit:4.12'
-    implementation project(path: ':chartlib')
+
+//    implementation project(path: ':chartlib')
+    implementation 'com.github.dongwang8688:MEChartLib:v1.0.2'
 }
